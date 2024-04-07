@@ -2764,9 +2764,11 @@
       },
       "zigbee": {
         "manufacturerName": [
+          "_TZE200_znbl8dj5",
           "_TYZB01_cbiezpds"
         ],
         "productId": [
+          "TS0601",
           "SM0201"
         ],
         "endpoints": {
@@ -7365,6 +7367,7 @@
           "_TZE200_mudxchsu",
           "_TZE200_7yoranx2",
           "_TZE200_e9ba97vf",
+          "_TZE200_cpmgn2cf",
           "_TZE200_kds0pmmv"
         ],
         "productId": [
@@ -8420,6 +8423,7 @@
           "_TZ3000_oex7egmt",
           "_TZ3000_hafsqare",
           "_TZ3000_oaq83gqc",
+          "_TZ3000_hhiodade",
           "_TZ3000_6eyydfyg"
         ],
         "productId": [
@@ -8430,6 +8434,9 @@
           "1": {
             "clusters": [
               0,
+              3,
+              4,
+              5,
               6
             ],
             "bindings": [
@@ -8440,11 +8447,40 @@
         "learnmode": {
           "image": "/drivers/wall_switch_1_gang/assets/icon.svg",
           "instruction": {
-            "en": "Press the button for 10 seconds (the LED should start blinking)."
+            "en": "Press the button for 7 seconds (until LED starts blinking)."
           }
         }
       },
-      "settings": []
+      "settings": [
+        {
+          "id": "indicator_mode",
+          "type": "radio",
+          "label": {
+            "en": "Indicator mode"
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Light Off"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Light on when switch turned on."
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Light on when the switch is turned off."
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "wall_switch_1_gang_tuya",

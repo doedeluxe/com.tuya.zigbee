@@ -23,9 +23,11 @@
   },
   "zigbee": {
     "manufacturerName": [
-      "_TYZB01_cbiezpds"
+	"_TZE200_znbl8dj5",
+     "_TYZB01_cbiezpds"
     ],
     "productId": [
+		"TS0601",
       "SM0201"
     ],
     "endpoints": {
